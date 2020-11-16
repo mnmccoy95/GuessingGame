@@ -6,12 +6,16 @@ namespace Guess
     {
         static void Main(string[] args)
         {
-            Play();
+            int guessAmount = 0;
+            Play(guessAmount);
         }
 
-        static void Play()
+        static void Play(int guesses)
         {
             Console.WriteLine("~Welcome to Secret Number Game~");
+
+            while(guesses < 3)
+            {
             Console.Write("Guess a Number! : ");
             string answer = Console.ReadLine();
             int answerInt;
@@ -28,6 +32,8 @@ namespace Guess
             if(isNumber == true)
             {
                 Compare(answerInt, secretNumber);
+                guesses++;
+            }
             }
 
         }
