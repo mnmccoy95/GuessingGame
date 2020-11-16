@@ -15,12 +15,12 @@ namespace Guess
             Console.WriteLine("~Welcome to Secret Number Game~");
             int secretNumber = Number();
             Console.WriteLine(secretNumber);
+            int answerInt = 0;
 
-            while(guesses < 3)
+            while(guesses < 3 && secretNumber != answerInt)
             {
             Console.Write($"Guess a Number! Chances Left({3 - guesses}) : ");
             string answer = Console.ReadLine();
-            int answerInt;
             bool isNumber = int.TryParse(answer, out answerInt);
 
             while(!isNumber)
