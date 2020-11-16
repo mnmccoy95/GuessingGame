@@ -16,13 +16,14 @@ namespace Guess
             Choose Your Difficulty:
             1. Easy
             2. Medium
-            3. Hard");
+            3. Hard
+            4. CHEATER!!");
             Console.Write("Difficulty: ");
             string difficultyChosen = Console.ReadLine();
             int difficultyInt = 0;
             bool isDiffNumber = int.TryParse(difficultyChosen, out difficultyInt);
 
-            while(!isDiffNumber | difficultyInt > 3)
+            while(!isDiffNumber | difficultyInt > 4)
             {
                 Console.Write("Difficulty: ");
                 difficultyChosen = Console.ReadLine();
@@ -45,6 +46,10 @@ namespace Guess
                 {
                     allowedGuesses = 4;
                     Play(guesses, allowedGuesses);
+                }
+                if(difficultyInt == 4)
+                {
+                    Cheater();
                 }
             }
 
@@ -100,6 +105,32 @@ namespace Guess
                     Console.WriteLine("Too low!");
                 }
             }
+        }
+
+        static void Cheater()
+        {
+            int secretNumber = Number();
+            int answerInt = 0;
+
+            while(secretNumber != answerInt)
+            {
+            Console.Write("Guess a Number! Chances Left(∞) : ");
+            string answer = Console.ReadLine();
+            bool isNumber = int.TryParse(answer, out answerInt);
+
+            while(!isNumber)
+            {
+                Console.Write("Guess a Number! : ");
+                answer = Console.ReadLine();
+                isNumber = int.TryParse(answer, out answerInt);
+            }
+
+            if(isNumber == true)
+            {
+                Compare(answerInt, secretNumber);
+            }
+            }
+
         }
     }
 }
