@@ -13,14 +13,15 @@ namespace Guess
         static void Play(int guesses)
         {
             Console.WriteLine("~Welcome to Secret Number Game~");
+            int secretNumber = Number();
+            Console.WriteLine(secretNumber);
 
             while(guesses < 3)
             {
-            Console.Write("Guess a Number! : ");
+            Console.Write($"Guess a Number! Chances Left({3 - guesses}) : ");
             string answer = Console.ReadLine();
             int answerInt;
             bool isNumber = int.TryParse(answer, out answerInt);
-            int secretNumber = 42;
 
             while(!isNumber)
             {
@@ -36,6 +37,12 @@ namespace Guess
             }
             }
 
+        }
+
+        static int Number() {
+            Random r = new Random();
+            int genRand= r.Next(1,101);
+            return genRand;
         }
 
         static void Compare(int userNum, int secretNum)
