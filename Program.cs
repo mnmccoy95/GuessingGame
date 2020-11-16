@@ -16,6 +16,7 @@ namespace Guess
             string answer = Console.ReadLine();
             int answerInt;
             bool isNumber = int.TryParse(answer, out answerInt);
+            int secretNumber = 42;
 
             while(!isNumber)
             {
@@ -26,9 +27,21 @@ namespace Guess
 
             if(isNumber == true)
             {
-                Console.WriteLine($"Your Guess: {answerInt}");
+                Compare(answerInt, secretNumber);
             }
 
+        }
+
+        static void Compare(int userNum, int secretNum)
+        {
+            if(userNum == secretNum)
+            {
+                Console.WriteLine($"YOOOO YOU GOT IT!! {secretNum}!!!");
+            }
+            else
+            {
+                Console.WriteLine("that ain't it, fam :(");
+            }
         }
     }
 }
