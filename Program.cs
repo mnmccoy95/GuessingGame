@@ -54,6 +54,14 @@ namespace Guess
             else
             {
                 Console.WriteLine("that ain't it, fam :(");
+                if(userNum > secretNum)
+                {
+                    Console.WriteLine("Too high!");
+                }
+                else
+                {
+                    Console.WriteLine("Too low!");
+                }
             }
         }
     }
