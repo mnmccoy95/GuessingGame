@@ -1,0 +1,16 @@
+C:\Users\xshin\workspace\Guess\bin\Debug\net5.0\Guess.exe
+C:\Users\xshin\workspace\Guess\bin\Debug\net5.0\Guess.deps.json
+C:\Users\xshin\workspace\Guess\bin\Debug\net5.0\Guess.runtimeconfig.json
+C:\Users\xshin\workspace\Guess\bin\Debug\net5.0\Guess.runtimeconfig.dev.json
+C:\Users\xshin\workspace\Guess\bin\Debug\net5.0\Guess.dll
+C:\Users\xshin\workspace\Guess\bin\Debug\net5.0\ref\Guess.dll
+C:\Users\xshin\workspace\Guess\bin\Debug\net5.0\Guess.pdb
+C:\Users\xshin\workspace\Guess\obj\Debug\net5.0\Guess.csprojAssemblyReference.cache
+C:\Users\xshin\workspace\Guess\obj\Debug\net5.0\Guess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xshin\workspace\Guess\obj\Debug\net5.0\Guess.AssemblyInfoInputs.cache
+C:\Users\xshin\workspace\Guess\obj\Debug\net5.0\Guess.AssemblyInfo.cs
+C:\Users\xshin\workspace\Guess\obj\Debug\net5.0\Guess.csproj.CoreCompileInputs.cache
+C:\Users\xshin\workspace\Guess\obj\Debug\net5.0\Guess.dll
+C:\Users\xshin\workspace\Guess\obj\Debug\net5.0\ref\Guess.dll
+C:\Users\xshin\workspace\Guess\obj\Debug\net5.0\Guess.pdb
+C:\Users\xshin\workspace\Guess\obj\Debug\net5.0\Guess.genruntimeconfig.cache
